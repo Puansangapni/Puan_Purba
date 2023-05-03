@@ -1,0 +1,118 @@
+body{
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: black;
+  }
+
+nav {
+    z-index: 100;
+    background-color: black;
+    float: right;
+    width: 100%;
+    padding: 0px;
+    border-bottom: 1px #00B9F7;
+}
+
+nav ul{
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: black;
+
+}
+
+nav li{
+    display: inline;
+    float: left;
+}
+
+nav li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+nav a:hover{
+    background-color: #00B9F7;
+    transition: background-color .5s ease-in-out;
+}
+
+/* style untuk gambar */
+.images {
+    display: flex;
+    width: 100%;
+    transition: 2s;
+}
+
+.images img {
+    width: 100%;
+}
+
+.wrapper {
+    width: 800px;
+    margin: auto;
+    border-radius: 5px;
+    overflow: hidden;
+    position: relative;
+}
+
+#slide-1:target ~ .images {
+    margin-left: 0px;
+}
+
+#slide-2:target ~ .images {
+    margin-left: -100%;
+}
+
+#slide-3:target ~ .images {
+    margin-left: -200%;
+}
+
+#slide-4:target ~ .images {
+    margin-left: -300%;
+}
+
+#slide-5:target ~ .images {
+    margin-left: -400%;
+}
+
+.navigation a {
+    display: inline-block;
+    height: 25px;
+    width: 25px;
+    background-color: #dedede;
+    font-size: 0px;
+    border-radius: 50%;
+    margin: 3px;
+    transition: 1s;
+}
+
+.navigation a:hover {
+    background-color: #666;
+}
+
+.navigation {
+    position: absolute;
+    margin-left: auto; 
+    margin-right: auto;
+    left:0;
+    right: 0;
+    text-align: center;
+    margin-top: -50px;
+}
+
+@media screen and (max-width: 800px){
+    .wrapper {
+        width: 90%;
+    }
+}

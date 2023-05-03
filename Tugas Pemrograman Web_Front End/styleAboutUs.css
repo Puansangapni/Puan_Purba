@@ -1,0 +1,104 @@
+nav {
+    z-index: 100;
+    background-color: black;
+    float: right;
+    width: 100%;
+    padding: 0px;
+    border-bottom: 1px #00B9F7;
+
+}
+
+nav .logo{
+    margin-left: 30%;
+}
+
+nav ul{
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: black;
+}
+
+nav li{
+    display: inline;
+    float: left;
+}
+
+nav li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+nav a:hover{
+    background-color: #00B9F7;
+    transition: background-color .5s ease-in-out;
+}
+
+#aboutus {
+    text-align: center;
+}
+
+
+/* style untuk nama dan nim */
+.innersc {
+    width: 1000px;
+    margin: auto;
+}
+
+.tim1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    font-size: xx-large;
+}
+
+/* style untuk bagian bawah */
+footer {
+    padding: 50px 0px 50px 0px;
+    background-color: black;
+    color: #fff;
+}
+  
+footer .innersc {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+footer .innersc div {
+    width: 20%;
+}
+
+footer .innersc h5 {
+    margin-top: 0px;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+}
+  
+footer .innersc p {
+    margin-top: 0px;
+    font-size: 20px;
+    font-weight: bold;
+}
+  
+footer .innersc .final {
+    width: 100%;
+    margin-top: 30px;
+    padding-top: 30px;
+    border-top: 1px solid white;
+    text-align: center;
+}
+
+@media screen and (max-width: 991.98px) {
+    .innersc {
+        width: 90%;
+    }
+}
